@@ -1,0 +1,16 @@
+.world{
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/world.jpg');
+  background-size: cover;
+}
+.button-container{
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top:45%;
+
+  button{
+    margin: 30px;
+  }
+}
