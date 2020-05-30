@@ -1,27 +1,31 @@
 # AngularApp
+This project provides a simple guide of how to deploy and angular application on AWS S3.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+```generated with Angular CLI version 9.1.7.```
 
-## Development server
+## Deployment steps
+To deploy the application follow the steps belows:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### 0. System requirements
 
-## Code scaffolding
+Make sure to have:
+ - [nodeJs](https://nodejs.org/en/download/)
+ - [angular-cli](https://angular.io/cli)  
+ - [AWS cli](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+installed on you machine. 
+After installing the AWS CLI yuo will need to configure it 
+by following these [steps](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html).
 
-## Build
+### 1. Run the application locally
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Run `npm install` to install all required dependencies
+- Run `ng serve` for a dev server.
+- Navigate to `http://localhost:4200/` and check the app is working
 
-## Running unit tests
+## 3. Create a new bucket for the application
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 2. Build the project
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ - Run `ng build --prod` to build the project (Use the `--prod` flag for a production build). 
+ - The build artifacts will be stored in the `dist/` directory.
