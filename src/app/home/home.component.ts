@@ -19,4 +19,7 @@ export class HomeComponent implements OnInit {
     this.router.navigateByUrl(url).then(r => console.log(r));
   }
 
+  reload() {
+    location.reload();
+  }
 }

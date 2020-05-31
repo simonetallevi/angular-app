@@ -19,4 +19,7 @@ export class HelloComponent implements OnInit {
   goTo(url: string) {
     this.router.navigateByUrl(url).then(r => console.log(r));
   }
+  reload() {
+    location.reload();
+  }
 }

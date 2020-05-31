@@ -18,4 +18,8 @@ export class WorldComponent implements OnInit {
   goTo(url: string) {
     this.router.navigateByUrl(url).then(r => console.log(r));
   }
+
+  reload() {
+    location.reload();
+  }
 }
